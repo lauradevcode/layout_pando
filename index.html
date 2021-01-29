@@ -5,38 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- Css  file -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet"> 
-        
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+    <!-- Custom Css   -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
     <title>Login</title>
 </head>
 
 <body style="background-color: #f2f2f2; text-align: center;">
     <div class="container">
 
-        <form action="" method="POST">
-        
+        <form action="" method="get">
+
             <div class="logo text-center">
                 <img src="img/Grupo 16149.png">
             </div> <br>
 
             <div class="inputs col-lg-6 col-md-5 col-sm-5 col-8">
                 <input class="form-control form-control-lg" type="text" placeholder="Seu e-mail"
-                    aria-label=".form-control-lg example">
+                    aria-label=".form-control-lg example" id="email" name="email" maxlength="60" required>
             </div>
 
             <div class="inputs col-lg-6 col-md-5 col-sm-5 col-8">
-                <input class="form-control form-control-lg" type="text" placeholder="********"
-                    aria-label=".form-control-lg example">
+                <input class="form-control form-control-lg" type="password" placeholder="******"
+                    aria-label=".form-control-lg example" name="senha" required>
             </div>
-            <div class="but d-grid gap-2 col-lg-6 col-md-5 col-sm-5 col-8 mx-auto">
-                <button type="button" class="btn btn-danger btn-lg">ENTRAR</button>
+
+            <div class="but d-grid gap-2 col-lg-6 col-md-5 col-sm-5 col-12 mx-auto">
+                <button type="button" class="btn btn-danger btn-lg">
+                    <a href="bem_vindo.html" style="text-decoration: none; color: #fff;"> ENTRAR</a>
+                </button>
             </div>
 
         </form>
@@ -47,8 +51,9 @@
                 <img src="img/f.png">
                 <img src="img/g.png">
             </div>
-<br><br>
-            <div class="txts">Novo por aqui? <font color="#00ADA8" style="font-weight: bolder;"> Crie sua conta</font></div>
+            <br><br>
+            <div class="txts">Novo por aqui? <font color="#00ADA8" style="font-weight: bolder;"> Crie sua conta</font>
+            </div>
         </div>
 
 </body>

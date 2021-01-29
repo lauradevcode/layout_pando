@@ -2,27 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> 
-    <title>Catalogo Produtos</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Css  file -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+
+  <!-- Custom Css   -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <title>Galeria de Produtos</title>
 </head>
 
 <body>
-    <div class="produto container">
-        <div class="card" style="width: 18rem;">
-            <img src="img/Foto Corrente Love.png" class="imgcorr card-img-top" >
-            <div class="card-body">
-              <h5 class="card-title">Foto Corrente Love</h5>
-              <p class="card-text">Correntes Limeira<br>Prazo: 15 dias úteis</p>
-                <a class="but btn btn-primary ">Comprar</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container"> 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <img src="img/Grupo 16151.png" width="110" height="16" class="logop d-inline-block align-top">
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"></div>
+      <ul class="lista">
+        <li class="">
+          <a>
+            <img src="img/Favoritos.png" >
+          </a>
+        </li>
+        <li class="sacola">
+          <a><img src="img/Grupo de máscara 9.png"></a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <!-- Grupo de icones -->
+
+  <section class="ico-group">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="ico-group__list text-center">
+            <li><img width="50px" src="img/botao1.svg"><p>Montar Produto</p></li>
+            <li><img src="img/Grupo 16145.png"><p>Produto Finalizado</p></li>
+            <li><img src="img/Grupo 16143.png"><p>Ofertas</p></li>
+            <li><img src="img/Grupo 16144.png"><p>Novidades</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section>
+    <div class="container">
+      <div class="row search">
+      <div class="col" id="filtroButton"><a href=""style="color: white;">Filtro</a></div>
+       <div  class="col" id="inputWrapper">
+        <input id="searchText" type="search" autocomplete="off" spellcheck="false" aria-live="polite" placeholder="Buscar">
+        <button id="searchButton" type="submit"><img src="img/lupa.png" style="height: 40%;" alt="" srcset=""></button>
+       </div>
+          
+      </div>
+    </div>
+     
+    </div>
+  </section>
+  <!-- Cards -->
+  <section class="cads__section">
+    <div class="container">
+      <ul class="cards" >
+        <li class="cards__item" >
+          <div class="card">
+            <div class="card__image card__image--fence">
+              <img src="img/Foto Corrente Love.png" alt="">
+            </div>
+            <div class="card__content">
+              <div class="card__title">Corrente de coração love</div>
+              <p class="card__text">Correntes Limeira<br>Prazo: 15 dias úteis</p>
+              <div class="card__price d-flex">
+                <span><font color="#FC7E3F">R$</font> 5,00 </span> <img src="img/Estrelas.png" alt="">
               </div>
+              <button class="sacola-item btn btn--block btn-primary card__btn" class="criar"> Comprar</button>
             </div>
           </div>
-    </div>
-  
-</body>
+        </li>
+        
+        <li class="cards__item" >
+          <div class="card">
+            <div class="card__image card__image--fence">
+              <img src="img/Foto Corrente Love.png" alt="">
+            </div>
+            <div class="card__content">
+              <div class="card__title">Corrente de coração love</div>
+              <p class="card__text">Correntes Limeira<br>Prazo: 15 dias úteis</p>
+              <div class="card__price d-flex">
+                <span><font color="#FC7E3F">R$</font>5,00 </span> <img src="img/Estrelas.png" alt="">
+              </div>
+              <button class="sacola-item btn btn--block btn-primary card__btn" class="criar">Comprar</button>
+            </div>
+          </div>
+        </li>
 
+        <li class="cards__item" >
+          <div class="card">
+            <div class="card__image card__image--fence">
+              <img src="img/Foto Corrente Love.png" alt="">
+            </div>
+            <div class="card__content">
+              <div class="card__title">Corrente de coração love</div>
+              <p class="card__text">Correntes Limeira<br>Prazo: 15 dias úteis</p>
+              <div class="card__price d-flex">
+                <span><font color="#FC7E3F">R$</font>5,00 </span> <img src="img/Estrelas.png" alt="">
+              </div>
+              <button class="sacola-item btn btn--block btn-primary card__btn" class="criar">Comprar</button>
+            </div>
+          </div>
+        </li>
+        <li class="cards__item" >
+          <div class="card">
+            <div class="card__image card__image--fence">
+              <img src="img/Foto Corrente Love.png" alt="">
+            </div>
+            <div class="card__content">
+              <div class="card__title">Corrente de coração love</div>
+              <p class="card__text">Correntes Limeira<br>Prazo: 15 dias úteis</p>
+              <div class="card__price d-flex">
+                <span> <font color="#FC7E3F">R$</font>5,00 </span> <img src="img/Estrelas.png" alt="">
+              </div>
+              <button class="sacola-item btn btn--block btn-primary card__btn" class="criar">Comprar</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script>
+    let sacolaItem = document.querySelectorAll(".sacola-item");
+    
+    sacolaItem.forEach(element => {
+      element.addEventListener('click', () => {
+        let sacola = document.querySelector(".sacola");
+        if (sacola.classList.contains('sinal')) {
+          sacola.classList.toggle("sinal");
+        } else {
+          sacola.classList.toggle("sinal");
+        }
+      })  
+    });
+
+  </script>
+</body>
 </html>
